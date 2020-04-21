@@ -1,38 +1,30 @@
-# material-colors-ts
+# react-native-keyboard-dismiss-view
 
-[![NPM version](https://img.shields.io/npm/v/material-colors-ts.svg)](https://www.npmjs.com/package/material-colors-ts)
+[![NPM version](https://img.shields.io/npm/v/react-native-keyboard-dismiss-view.svg)](https://www.npmjs.com/package/react-native-keyboard-dismiss-view)
 
-A zero dependency TypeScript export of the material design color system.
+A touch intercepting view to dismiss the keyboard.
 
 ## Install
 ```bash
-$ npm install material-colors-ts
+$ npm install react-native-keyboard-dismiss-view
 ```
 
 ## Usage
-### NodeJS or Browser
-```js
-import { white, blue } from 'material-colors-ts';
 
-export function getBackgroundColor() {
-  return blue[100];
-}
-```
-
-### React
+### React Native
 ```tsx
-import React from 'react';
-import { white, blue } from 'material-colors-ts';
+import KeyboardDismissView, { dismissKeyboard } from 'react-native-keyboard-dismiss-view';
 
-export default function Example() {
+export default function Home() {
   return (
-    <div style={{ backgroundColor: white }}>
-      <span style={{ color: blue[500] }}>
-        This is some blue text
-      </span>
-    </div>
-  )
+    <KeyboardDismissView style={{flex: 1}}>
+      <TextInput
+        placeholder="Email address"
+      />
+      <Button title="Submit" onPress={() => alert('pressed')} />
+      <Button title="Dismiss keyboard" onPress={dismissKeyboard} />
+    </KeyboardDismissView>
+  );
 }
-
 ```
 
