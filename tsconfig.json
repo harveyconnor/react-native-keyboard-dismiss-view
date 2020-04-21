@@ -10,13 +10,22 @@
     "jsx": "react-native",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "skipLibCheck": true
+    "moduleResolution": "node",
+    "lib": [
+      "ES2018",
+      "ES5"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ]
   },
   "include": [
-    "src/**/*"
+    "./src/**/*.ts",
+    "./src/**/*.tsx"
   ],
   "exclude": [
     "node_modules",
-    "**/*.spec.ts"
+    "**/*.spec.ts",
+    "lib"
   ]
 }

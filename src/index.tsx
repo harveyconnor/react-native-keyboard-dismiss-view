@@ -1,8 +1,8 @@
-import React, { ReactNode } from 'react';
+import * as React  from 'react';
 import { TouchableWithoutFeedback, View, ViewProps, Keyboard } from 'react-native';
 
 export interface KeyboardDismissViewProps extends ViewProps {
-  children: ReactNode;
+  children: React.ReactNode;
 }
 
 /**
