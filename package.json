@@ -1,0 +1,40 @@
+{
+  "name": "react-native-keyboard-dismiss-view",
+  "homepage": "https://github.com/harveyconnor/react-native-keyboard-dismiss-view",
+  "version": "1.0.0",
+  "author": {
+    "name": "Harvey Connor",
+    "email": "harvey@smartguide.com.au"
+  },
+  "description": "A touch intercepting view to dismiss the keyboard.",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "react-native",
+    "keyboard",
+    "keyboard dismiss view",
+    "dismiss",
+    "dismissable keyboard"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harveyconnor/react-native-keyboard-dismiss-view.git"
+  },
+  "bugs": {
+    "url": "https://github.com/harveyconnor/react-native-keyboard-dismiss-view/issues"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.34",
+    "@types/react-native": "^0.62.2",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-native": "^0.62.2"
+  }
+}
